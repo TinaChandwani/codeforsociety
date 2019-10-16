@@ -1,0 +1,96 @@
+{% extends 'base.html' %} 
+   {% load static %}
+   {% block title %} | About Us {% endblock %}
+   {% block content %}
+  <section id="showcase-inner" class="py-5 text-white">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <h1 class="display-4">About Code for Society</h1>
+              <p class="lead">Each workshop's content is put together based on the emerging technologies that are in demand in your local area.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Breadcrumb -->
+      <section id="bc" class="mt-3">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="{% url 'index' %}">
+                  <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="breadcrumb-item active"> About</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+    
+      <section id="about" class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              {% comment %} <h2>We Search For The Perfect Home</h2> {% endcomment %}
+              <p class="lead">GitHub brings together the world's largest community of developers to discover, share, and build better software.</p>
+              <img src="{% static 'img/logo.png' %} " alt="">
+              <p class="mt-4">GitHub is an American company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft, which acquired the company in 2018 for $7.5 billion.[4] It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</p>
+            </div>
+            <div class="col-md-4">
+              {% if mvp_facilitators %}
+                {% for facilitator in mvp_facilitators %}
+                  <div class="card">
+                    <img class="card-img-top" src="{{ facilitator.photo.url }}" alt="Seller of the month">
+                    <div class="card-body">
+                      <h5 class="card-title">Workshop Of The Month</h5>
+                      <h6 class="text-secondary">{{ facilitator.name }}</h6>
+                      <p class="card-text">{{ facilitator.description }}
+                      </p>
+                    </div>
+
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Work -->
+      <section id="work" class="bg-dark text-white text-center">
+        <h2 class="display-4">We Work For You</h2>
+        <h4>Work Hard in silence let success be your noise!</h4>
+        <hr>
+        <a href="workshops.html" class="btn btn-secondary text-white btn-lg">View Our Featured workshops</a>
+      </section>
+    
+      <!-- Team -->
+      <section id="team" class="py-5">
+        <div class="container">
+          <h2 class="text-center">Our Team</h2>
+          <div class="row text-center">
+              {% if facilitators %}
+                {% for facilitator in facilitators%}
+                <div class="col-md-4">
+                  <img src="{{ facilitator.photo.url  }}" alt="" class="rounded-circle mb-3">
+                  <h4>{{facilitator.name}}</h4>
+                  <p class="text-success">
+                    <i class="fas fa-award text-success mb-3"></i> Facilitator</p>
+                  <hr>
+                  <p>
+                    <i class="fas fa-phone"></i> {{ facilitator.phone }}</p>
+                  <p>
+                    <i class="fas fa-envelope-open"></i> {{ facilitator.email }}
+                  </p>
+                </div>
+                {% endfor %}
+              {% else %}
+                <div class="col-md-4">
+                      <p>No one available</p>
+                </div>
+              {% endif%}
+            </div>
+        </div>
+      </section>
+{% endblock %}
