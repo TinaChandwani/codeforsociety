@@ -10,19 +10,25 @@ Code For Society is a nonprofitable organization which organizes technical works
 
 ## Technology Stack:
 
-[**Django**](https://docs.djangoproject.com/en/3.0/)
-is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+## [**Django**](https://docs.djangoproject.com/en/3.0/)
+
+![django_logo](https://github.com/TinaChandwani/codeforsociety/blob/master/django_logo.jpg)
+<br />
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
 
-[**Bootstrap**](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-is an open-source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+## [**Bootstrap**](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+
+![bootstrap_logo](https://github.com/TinaChandwani/codeforsociety/blob/master/bootstrap_logo.JPG)
+<br />
+Bootstrap is an open-source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
 
 ## [**iLightBox**](http://www.ilightbox.net/)
-
 ![lightbox_logo](https://github.com/TinaChandwani/codeforsociety/blob/master/lightbox_logo.JPG)
 
-**iLightBox** allows you to easily create the most beautiful responsive overlay windows using the jQuery JavaScript library.
-By combining support for a wide range of media with gorgeous skins and a user-friendly API, iLightBox aims to push the Lightbox concept as far as possible.
+iLightBox allows you to easily create the most beautiful responsive overlay windows using the jQuery JavaScript library.
+By combining support for a wide range of media with gorgeous skins and a user-friendly API, iLightBox aims to push the Lightbox concept  as far as possible.
+
 
 
 
